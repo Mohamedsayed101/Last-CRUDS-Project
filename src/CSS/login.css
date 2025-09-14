@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #8f59e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i,
+a,
+button,
+input,
+label {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+input {
+    outline: none;
+    border: 0;
+    width: 100%;
+    /* color: #777; */
+}
+
+i,
+button {
+    cursor: pointer;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px 60px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-parts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-parts .form-part {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-part label {
+    color: #777;
+}
+
+.form-part .form-inp {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #777;
+}
+
+.form-inp i:not(#eye-icon) {
+    font-size: 20px;
+    color: #777;
+}
+
+.form-inp i:not(#eye-icon):hover {
+    color: #e11f1f;
+}
+
+#eye-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 14px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+#eye-icon:hover {
+    background-color: #eee;
+}
+
+.forget {
+    margin-top: -10px;
+    font-size: 13px;
+    font-weight: 600;
+    align-self: flex-end;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.forget:hover {
+    color: #3644a4;
+}
+
+button[type="submit"] {
+    border: 0;
+    background: linear-gradient(135deg, #b51650 0%, #0800ff 100%);
+    padding: 10px 20px;
+    border-radius: 24px;
+    width: 100%;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #003b9b66 0%, #080465 100%);
+    color: wheat;
+}
+
+.error-msg {
+    display: flex;
+    align-items: center;
+    margin: -10px 0;
+    font-weight: 900;
+    gap: 4px;
+    display: none;
+}
+
+.error-msg p {
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+}
+
+.error-msg i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(138, 114, 25);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* ======== */
+
+.alt-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #777;
+}
+
+.alt-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.alt-icons i {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    transition: 0.3s;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.fa-facebook-f {
+    background-color: #171764;
+}
+
+.fa-twitter {
+    background-color: blue;
+}
+
+.fa-google {
+    background-color: #db4437;
+}
+
+.alt-icons i:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.register-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+

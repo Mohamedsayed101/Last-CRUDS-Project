@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <title>Login Page</title>
+
+    <style></style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="" id="loginForm">
+        <div class="form-parts">
+          <div class="form-part">
+            <label for="userName">Username</label>
+            <div class="form-inp">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                id="userName"
+                name="username"
+                placeholder="Type your username"
+              />
+            </div>
+          </div>
+
+          <div class="form-part">
+            <label for="password">Password</label>
+            <div class="form-inp">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Type your password"
+              />
+              <i class="fa-solid fa-eye-slash" id="eye-icon"></i>
+            </div>
+          </div>
+          <a class="forget" href="">Forget Password?</a>
+          <div class="error-msg">
+            <i class="fa-solid fa-exclamation"></i>
+            <p>Enter a valid username or password</p>
+          </div>
+        </div>
+
+        <button type="submit" id="submit">LOGIN</button>
+      </form>
+
+      <div class="alt-login">
+        <p>or sign up using</p>
+        <div class="alt-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-google"></i>
+        </div>
+      </div>
+
+      <div class="register-switch">
+        <p>or sign up using</p>
+        <a href="./register.html">SIGN UP</a>
+      </div>
+    </div>
+    <script src="../JS/login.js"></script>
+  </body>
+</html>

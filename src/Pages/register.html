@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/rgister.css" />
+    <title>Login Page</title>
+
+    <style>
+    </style>
+  </head>
+  <body style="min-height: 100vh;">
+    <div class="login-container" style=" height: 98%;">
+      <h2>Register</h2>
+      <form action="./login.html" id="loginForm">
+        <div class="form-parts">
+          <div class="form-part">
+            <label for="userName">Username</label>
+            <div class="form-inp">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                id="userName"
+                data-input="username"
+                name="username"
+                placeholder="Type your username"
+              />
+            </div>
+          </div>
+          <p class="error username-error"></p>
+          <div class="form-part">
+            <label for="email">Email</label>
+            <div class="form-inp">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                data-input="email"
+                placeholder="Type your email"
+              />
+            </div>
+          </div>
+          <p class="error email-error"></p>
+          <div class="form-part">
+            <label for="password">Password</label>
+            <div class="form-inp">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                data-toggle="password"
+                placeholder="Type your password"
+              />
+              <i class="fa-solid fa-eye-slash" id="eye-icon" itemid="1"></i>
+            </div>
+          </div>
+          <p class="error password-error"></p>
+
+           <div class="form-part">
+            <label for="confirmPassword">Confirm Password</label>
+            <div class="form-inp">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                data-toggle="confirmPassword"
+                placeholder="Type your password again"
+              />
+              <i class="fa-solid fa-eye-slash" id="eye-icon"></i>
+            </div>
+          </div>
+          <p class="error confirmPassword-error"></p>
+
+        </div>
+
+        <button type="submit" id="submit">Register</button>
+      </form>
+      <p class="AllError"></p>
+
+      <div class="alt-login">
+        <p>or sign in using</p>
+        <div class="alt-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-google"></i>
+        </div>
+      </div>
+
+      <div class="register-switch">
+        <p>or sign in using</p>
+        <a href="./login.html">SIGN IN</a>
+      </div>
+    </div>
+    <script src="../JS/register.js"></script>
+  </body>
+</html>

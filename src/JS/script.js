@@ -1,4 +1,3 @@
-// ===== Elements =====
 let title = document.querySelector("#title");
 let price = document.querySelector("#price");
 let tax = document.querySelector("#taxes");
@@ -32,9 +31,8 @@ let AllError = document.querySelector(".AllError");
 let mood = "create";
 let temp = 0;
 
-// ===== Calculate Total =====
+// Calculate Total 
 function getTotal() {
-  // parse values with fallback to 0
   const p = Number(price.value.trim()) || 0;
   const t = Number(tax.value.trim()) || 0;
   const a = Number(ads.value.trim()) || 0;
@@ -50,10 +48,10 @@ function getTotal() {
     total.style.background = "";
   }
 
-  return totalVal; // always numeric
+  return totalVal; 
 }
 
-// ===== Handle Errors =====
+// Handle Errors 
 function handleErrors(tit, priceVal, cate) {
   titleError.innerHTML = "";
   priceError.innerHTML = "";
@@ -91,7 +89,7 @@ function handleErrors(tit, priceVal, cate) {
   return valid;
 }
 
-// ===== Local Storage =====
+// Local Storage 
 let dataPro = [];
 try {
   const raw = localStorage.getItem("product");
@@ -100,7 +98,7 @@ try {
   dataPro = [];
 }
 
-// ===== Submit =====
+// Submit 
 submit.onclick = (e) => {
   e.preventDefault();
 
@@ -136,7 +134,7 @@ submit.onclick = (e) => {
   showData();
 };
 
-// ===== Clear Form =====
+// Clear Form 
 function clearData() {
   title.value = "";
   price.value = "";
@@ -153,7 +151,7 @@ function clearData() {
   AllError.innerHTML = "";
 }
 
-// ===== Show Data =====
+// Show Data 
 function showData() {
   getTotal();
   let table = "";
@@ -193,14 +191,14 @@ function showData() {
 }
 showData();
 
-// ===== Delete One =====
+// Delete One 
 function deleteProduct(i) {
   dataPro.splice(i, 1);
   localStorage.setItem("product", JSON.stringify(dataPro));
   showData();
 }
 
-// ===== Update =====
+// Update 
 function updataData(i) {
   let product = dataPro[i];
   title.value = product.title;
@@ -217,7 +215,7 @@ function updataData(i) {
   scroll({ top: 0, behavior: "smooth" });
 }
 
-// ===== Delete All =====
+// Delete All 
 function deleteAll() {
   localStorage.removeItem("product");
   dataPro = [];
@@ -232,7 +230,7 @@ function deleteAll() {
   `;
 }
 
-// ==== Search function ====
+// Search function 
 let searchMood = "title";
 
 function getSearchMood(id) {

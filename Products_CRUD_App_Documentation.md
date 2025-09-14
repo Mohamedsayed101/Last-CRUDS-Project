@@ -92,7 +92,4 @@ products (not during updates).
 
 ------------------------------------------------------------------------
 
-## 4. Function-by-function reference
 
-... (truncated here for brevity in code, but full doc will be written to
-file) ...
