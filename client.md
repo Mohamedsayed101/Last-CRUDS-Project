@@ -49,8 +49,21 @@ The main objective of this project is to build a **simple, client-side product m
 
 ---
 
+## ✨ Deployment
+You can deploy the template easily using:
+- [GitHub Pages](https://mohamedsayed101.github.io/Last-CRUDS-Project/)  
+- [Netlify](https://last-cruds-project.netlify.app/)  
+
+---
+
+## 📧 Contact
+Created with ❤️ by **[Mohamed Sayed]**  
+Feel free to fork, customize, and share this template!
+
+---
+
 ## 5. Author Information
-- **Author:** Muhammad Sayed Omar AlSayed  
+- **Author:** Muhammad Sayed  
 - **Date Last Updated:** 20-Aug-2025  
 - **Social Media / Contact:**  
   - [GitHub](https://github.com/Mohamedsayed101/)  
@@ -60,3 +73,5 @@ The main objective of this project is to build a **simple, client-side product m
 ---
 
 This section provides **all key information** about the project’s purpose, target audience, usage instructions, and author metadata in a professional Markdown format.
+
+
